@@ -1,24 +1,25 @@
+import java.util.Stack;
 import java.util.Vector;
 
 public class vectors {
     public static void main(String[] args) {
 
-        Vector<String> a = new Vector<>();
 
-        a.add("hi");
-        a.add("hey");
-        a.add("hello");
-        System.out.println(a);
 
-        Vector<String> b = new Vector<>();
+        Stack<String> b = new Stack<>();
 
-        b.add("Hola");
-        b.add("namaste");
-        System.out.println(b);
+        b.push("Hola");
+        b.push("namaste");
+        b.push("hello");
 
-        a.addAll(b);
-        System.out.println(a);
-        System.out.println(b);
+        if(b.empty()){
+            System.out.println(" stack is empty ");
+        }
+        else {
+            System.out.println(b);
+        }
+
+
 
     }
 }

@@ -7,9 +7,10 @@ public class x2 {
     public static void main(String[] args) {
 
         try {
-            FileInputStream f = new FileInputStream("sam.txt");
+            FileInputStream f = new FileInputStream("data.txt");
             int i =0;
             while ((i = f.read())!=-1){
+
                 System.out.println((char)i);
             }
         }

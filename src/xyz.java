@@ -8,7 +8,7 @@ public class xyz {
         String s = "hello java !";
 
         try {
-            FileOutputStream f = new FileOutputStream("sam.txt");
+            FileOutputStream f = new FileOutputStream("data.txt");
 
             byte b[] = s.getBytes();
             f.write(b);
